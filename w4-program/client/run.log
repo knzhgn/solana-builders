@@ -1,0 +1,9 @@
+program: 5iWJKJ8S5mewS8JiMPbhAZjgRrPn53eW44ea8WqfbTfH
+counter: BvmnsYB2dKWZjSr3tDo3p9c4J9WBtPKNtYiphMv1D5no
+CreateAccount (System Program)	4wHKZGiqpG8dKzQvHwnwNvpnUnc6bDYZ9X6KYx12dPdtJDhM94DtfZZGkVLh1j2oPgJzHiTEEEuWPG6Q4KfTccdX	40 байт, rent 853440 lamports
+Initialize	5qMv1HQkbsjGYvMJZhQRZ9CkWYaywFSgrnb3jk9Dvz75S8UfC6Mx6EoRU6m71C8QRorSRigHtNKBvAcfANz7zKyg	count = 0
+Increment #1	VBurv5GYhsBSt1PvNGoyAqLy1Dnvy57nXxVLx7BnbhnHjYe3Jjy6uk7Kasna8rBu4NZuf7zfmoxnbKCCMKsY5yQ	count = 1
+Increment #2	27SFoj2JN4oThD332Zkg7dg8tbQthS1mRJjfUJpxpHWhxTT2Efnbsu3kmk8cdXBk2Sy6JEerAdqUNch38NH1fPrn	count = 2
+Increment #3	L8d1B6ERPFDY4hNpJjgw5B68eY62NouiUasKNdhL4u2ZJ9WMQ8Bmg7GXFR1BE8EeHEbzKiVeg81Uw3Cg7Jogoup	count = 3
+final count: 3
+client spent lamports: 883440
