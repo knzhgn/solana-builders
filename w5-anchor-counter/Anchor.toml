@@ -1,0 +1,21 @@
+[toolchain]
+package_manager = "npm"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+counter = "H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U"
+
+[programs.devnet]
+counter = "H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/valentin/solana-builders/w1-wallet/keys/main.json"
+
+[scripts]
+test = "npx ts-mocha -p ./tsconfig.json -t 1000000 \"tests/**/*.ts\""
+
+[hooks]

@@ -5,3 +5,6 @@ target/
 node_modules/
 __pycache__/
 .DS_Store
+*-keypair.json
+w5-anchor-counter-backup/
+*.zip

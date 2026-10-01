@@ -1,0 +1,9 @@
+# Уменьшение размера .so (rent за программу пропорционален размеру).
+# -Zlocation-detail=none: не вшивать в бинарник file:line для паник.
+# -Zfmt-debug=none: убрать код `{:?}` у derive(Debug); on-chain он нигде не нужен.
+# Эти -Z флаги принимает только nightly, поэтому включаем RUSTC_BOOTSTRAP для сборки.
+[env]
+RUSTC_BOOTSTRAP = "1"
+
+[target.sbpf-solana-solana]
+rustflags = ["-Zlocation-detail=none", "-Zfmt-debug=none"]

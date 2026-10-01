@@ -1,0 +1,218 @@
+{
+  "address": "H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U",
+  "metadata": {
+    "name": "counter",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "decrement",
+      "docs": [
+        "count -= 1, ниже нуля нельзя (только authority)."
+      ],
+      "discriminator": [
+        106,
+        227,
+        168,
+        59,
+        248,
+        27,
+        150,
+        101
+      ],
+      "accounts": [
+        {
+          "name": "counter",
+          "docs": [
+            "`mut` — меняем данные. `has_one = authority` — поле counter.authority",
+            "должно совпадать с ключом аккаунта `authority` ниже (иначе ошибка ConstraintHasOne).",
+            "Тип Account<Counter> сам проверяет владельца (owner == program id) и discriminator."
+          ],
+          "writable": true
+        },
+        {
+          "name": "authority",
+          "docs": [
+            "Signer — транзакцию подписал именно этот ключ."
+          ],
+          "signer": true,
+          "relations": [
+            "counter"
+          ]
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "increment",
+      "docs": [
+        "count += 1 (только authority)."
+      ],
+      "discriminator": [
+        11,
+        18,
+        104,
+        9,
+        104,
+        174,
+        59,
+        33
+      ],
+      "accounts": [
+        {
+          "name": "counter",
+          "docs": [
+            "`mut` — меняем данные. `has_one = authority` — поле counter.authority",
+            "должно совпадать с ключом аккаунта `authority` ниже (иначе ошибка ConstraintHasOne).",
+            "Тип Account<Counter> сам проверяет владельца (owner == program id) и discriminator."
+          ],
+          "writable": true
+        },
+        {
+          "name": "authority",
+          "docs": [
+            "Signer — транзакцию подписал именно этот ключ."
+          ],
+          "signer": true,
+          "relations": [
+            "counter"
+          ]
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "initialize",
+      "docs": [
+        "Создаёт аккаунт Counter: count = 0, authority = подписант."
+      ],
+      "discriminator": [
+        175,
+        175,
+        109,
+        31,
+        13,
+        152,
+        155,
+        237
+      ],
+      "accounts": [
+        {
+          "name": "counter",
+          "docs": [
+            "Новый аккаунт: Anchor сам вызывает System Program (create_account) с нужным",
+            "размером и rent-exempt балансом, а владельцем назначает эту программу.",
+            "Адрес — обычный keypair, поэтому новый аккаунт тоже должен подписать транзакцию."
+          ],
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "authority",
+          "docs": [
+            "Платит за создание и становится владельцем счётчика. `mut`: с него списываются lamports."
+          ],
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "docs": [
+            "Нужна для CPI в System Program при `init`."
+          ],
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "reset",
+      "docs": [
+        "count = 0 (только authority)."
+      ],
+      "discriminator": [
+        23,
+        81,
+        251,
+        84,
+        138,
+        183,
+        240,
+        214
+      ],
+      "accounts": [
+        {
+          "name": "counter",
+          "docs": [
+            "`mut` — меняем данные. `has_one = authority` — поле counter.authority",
+            "должно совпадать с ключом аккаунта `authority` ниже (иначе ошибка ConstraintHasOne).",
+            "Тип Account<Counter> сам проверяет владельца (owner == program id) и discriminator."
+          ],
+          "writable": true
+        },
+        {
+          "name": "authority",
+          "docs": [
+            "Signer — транзакцию подписал именно этот ключ."
+          ],
+          "signer": true,
+          "relations": [
+            "counter"
+          ]
+        }
+      ],
+      "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Counter",
+      "discriminator": [
+        255,
+        176,
+        4,
+        245,
+        188,
+        253,
+        124,
+        25
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "CounterUnderflow",
+      "msg": "Счётчик не может быть меньше нуля"
+    },
+    {
+      "code": 6001,
+      "name": "CounterOverflow",
+      "msg": "Счётчик достиг максимального значения u64"
+    }
+  ],
+  "types": [
+    {
+      "name": "Counter",
+      "docs": [
+        "Данные аккаунта. Anchor добавляет в начало 8-байтовый discriminator,",
+        "поэтому на диске аккаунт занимает 8 + INIT_SPACE = 8 + 32 + 8 = 48 байт."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "count",
+            "type": "u64"
+          }
+        ]
+      }
+    }
+  ]
+}
