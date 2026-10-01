@@ -236,5 +236,5 @@ para('Любая транзакция Solana — это список инстр�
      '(цена CU × лимит CU), поэтому сложная транзакция стоит дороже прежде всего из-за запрошенного лимита. '
      'Реальное движение средств надёжнее всего проверять по pre/post балансам: в tx3 именно они показали скрытую 1% комиссию Token-2022.')
 
-doc.save('report_week2.docx')
-print('saved report_week2.docx')
+doc.save('report_week2_full.docx')
+print('saved report_week2_full.docx')
