@@ -1,0 +1,7 @@
+Warning: 'anchor deploy' is deprecated. Use 'anchor program deploy' instead.
+Deploying cluster: https://api.devnet.solana.com
+Upgrade authority: /Users/valentin/solana-builders/w1-wallet/keys/main.json
+Deploying program "profile"...
+Program path: /Users/valentin/solana-builders/w6-pda-profile/target/deploy/profile.so...
+Program ID: 95m1n2nyxVMRKSNtJR9jCTGeLF7KasESR7zeyseH9hHu
+Deploy success

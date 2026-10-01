@@ -1,0 +1,25 @@
+cluster: devnet
+program: 95m1n2nyxVMRKSNtJR9jCTGeLF7KasESR7zeyseH9hHu
+authority: 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+seeds: ["profile", authority]
+PDA: CS9tZotJGKo9zP1u4aXXtneNr42Ht3e1sxzrHgbYkchk
+bump: 255
+create_profile	5pfhd4cwKLdidTCpT6ZYmnQftfLH9tttz2fyWFZQZzRKyjH6Wi5BGnTebYcGjzQdNkazzB6ngkY4fZQEdT84eKHF	username=w6_builder
+update_profile	4vz9Fhp89unbK9BgezBsHEqXCs2MeH6HbURB1u8wG9XEqkjHSc228jYcYLY2yeWZtWWsCkS6toGS9Kz13WvruUHJ	username=w6_builder_pda
+final: username=w6_builder_pda bio=Обновлено: username и bio меняются одной инструкцией bump=255
+spent lamports: 1965800
+
+--- stdout клиента ---
+cluster:   devnet
+program:   95m1n2nyxVMRKSNtJR9jCTGeLF7KasESR7zeyseH9hHu
+authority: 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+seeds:     ["profile", authority]
+PDA:       CS9tZotJGKo9zP1u4aXXtneNr42Ht3e1sxzrHgbYkchk
+bump:      255
+после create: username="w6_builder" bio="Первый PDA-профиль в devnet" createdAt=1790869577 updatedAt=1790869577 bump=255
+после update: username="w6_builder_pda" bio="Обновлено: username и bio меняются одной инструкцией" createdAt=1790869577 updatedAt=1790869579 bump=255
+
+create_profile  username=w6_builder      https://explorer.solana.com/tx/5pfhd4cwKLdidTCpT6ZYmnQftfLH9tttz2fyWFZQZzRKyjH6Wi5BGnTebYcGjzQdNkazzB6ngkY4fZQEdT84eKHF?cluster=devnet
+update_profile  username=w6_builder_pda  https://explorer.solana.com/tx/4vz9Fhp89unbK9BgezBsHEqXCs2MeH6HbURB1u8wG9XEqkjHSc228jYcYLY2yeWZtWWsCkS6toGS9Kz13WvruUHJ?cluster=devnet
+профиль: https://explorer.solana.com/address/CS9tZotJGKo9zP1u4aXXtneNr42Ht3e1sxzrHgbYkchk?cluster=devnet
+потрачено кошельком: 1965800 lamports (rent профиля + комиссии)

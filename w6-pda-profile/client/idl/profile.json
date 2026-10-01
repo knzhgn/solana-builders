@@ -1,0 +1,275 @@
+{
+  "address": "95m1n2nyxVMRKSNtJR9jCTGeLF7KasESR7zeyseH9hHu",
+  "metadata": {
+    "name": "profile",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "On-chain профиль на PDA"
+  },
+  "instructions": [
+    {
+      "name": "create_profile",
+      "docs": [
+        "Создаёт PDA-аккаунт профиля владельца."
+      ],
+      "discriminator": [
+        225,
+        205,
+        234,
+        143,
+        17,
+        186,
+        50,
+        220
+      ],
+      "accounts": [
+        {
+          "name": "profile",
+          "docs": [
+            "init + seeds + bump: Anchor вычисляет PDA из seeds, находит canonical bump, сверяет",
+            "с переданным адресом и создаёт аккаунт через System Program, подписывая за PDA",
+            "(invoke_signed). Если по этому адресу аккаунт уже есть, создание падает: один профиль на кошелёк."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  114,
+                  111,
+                  102,
+                  105,
+                  108,
+                  101
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authority"
+              }
+            ]
+          }
+        },
+        {
+          "name": "authority",
+          "docs": [
+            "Платит за аккаунт и становится владельцем профиля."
+          ],
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "username",
+          "type": "string"
+        },
+        {
+          "name": "bio",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "delete_profile",
+      "docs": [
+        "Закрывает профиль, rent возвращается владельцу."
+      ],
+      "discriminator": [
+        213,
+        96,
+        148,
+        104,
+        75,
+        217,
+        8,
+        131
+      ],
+      "accounts": [
+        {
+          "name": "profile",
+          "docs": [
+            "close = authority: Anchor обнулит данные, переведёт все lamports (rent) владельцу",
+            "и передаст аккаунт System Program."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  114,
+                  111,
+                  102,
+                  105,
+                  108,
+                  101
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authority"
+              }
+            ]
+          }
+        },
+        {
+          "name": "authority",
+          "docs": [
+            "mut: сюда возвращается rent."
+          ],
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "profile"
+          ]
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "update_profile",
+      "docs": [
+        "Меняет username и bio."
+      ],
+      "discriminator": [
+        98,
+        67,
+        99,
+        206,
+        86,
+        115,
+        175,
+        1
+      ],
+      "accounts": [
+        {
+          "name": "profile",
+          "docs": [
+            "seeds + bump = profile.bump: адрес должен быть PDA именно этого authority.",
+            "has_one: поле profile.authority в данных тоже равно authority (вторая защита)."
+          ],
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  114,
+                  111,
+                  102,
+                  105,
+                  108,
+                  101
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authority"
+              }
+            ]
+          }
+        },
+        {
+          "name": "authority",
+          "signer": true,
+          "relations": [
+            "profile"
+          ]
+        }
+      ],
+      "args": [
+        {
+          "name": "username",
+          "type": "string"
+        },
+        {
+          "name": "bio",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "UserProfile",
+      "discriminator": [
+        32,
+        37,
+        119,
+        205,
+        179,
+        180,
+        13,
+        194
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "UsernameTooLong",
+      "msg": "Username длиннее 32 байт"
+    },
+    {
+      "code": 6001,
+      "name": "BioTooLong",
+      "msg": "Bio длиннее 160 байт"
+    },
+    {
+      "code": 6002,
+      "name": "EmptyUsername",
+      "msg": "Username не может быть пустым"
+    },
+    {
+      "code": 6003,
+      "name": "Unauthorized",
+      "msg": "Только владелец может менять профиль"
+    }
+  ],
+  "types": [
+    {
+      "name": "UserProfile",
+      "docs": [
+        "Размер на диске = 8 (discriminator) + INIT_SPACE = 8 + 249 = 257 байт."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "username",
+            "type": "string"
+          },
+          {
+            "name": "bio",
+            "type": "string"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "updated_at",
+            "type": "i64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    }
+  ]
+}
