@@ -1,0 +1,139 @@
+Signature: 4FDLrLbsgUVYW4AKsq3uiusx7s8aq3jqYXvUFphFN6zJpLPMpg6YR9cmXZACF5i6xscht8hAqkp3piJuRpjun1b5
+Сеть: mainnet   Версия: 0   Статус: успех
+Slot: 452309411   Время: 2026-10-01 14:05:15 UTC
+Fee payer: 4f7vfq2xw1sJJ5sHcrcPZLfSWNamZkavUFkavNv1nRmT
+Signers (1): 4f7vfq2xw1sJJ5sHcrcPZLfSWNamZkavUFkavNv1nRmT
+
+Accounts (36):
+  [ 0] 4f7vfq2xw1sJJ5sHcrcPZLfSWNamZkavUFkavNv1nRmT signer,writable  fee payer | владелец токен-аккаунтов
+  [ 1] DHEGsPvYUN6jEqHMvQ2ycVcv5uCUhnpDvZfQarGbCa2  writable         токен-аккаунт TTWO (TTWo…FbKo), владелец 56XV…bd2p
+  [ 2] 2CnT5mcwxEdeEquWv8qpmrBppxHoeAf76kt9AMXyr4fC writable         токен-аккаунт TTWO (TTWo…FbKo), владелец WLHv…JVVh
+  [ 3] 66ZiRgSTdJdwDMuw687HLPXuFsFQ6FhwhsfW5xLHod3v writable         токен-аккаунт TTWO (TTWo…FbKo), владелец 4f7v…nRmT
+  [ 4] 7VoJ4J3cCumJfvmiNhvsy5iDrEkUsaBEafseRh4TUM2Q writable         прочий аккаунт (пул/служебный)
+  [ 5] AA73s5Uag1ye9egVbBwWzDfLmkd5YpCNCSisbW6CknDM writable         временный токен-аккаунт: создан и закрыт внутри этой транзакции
+  [ 6] B7ANqD3AMNE4v3n6EuvZYK4t7XeHrTxJXxDibiVMUyBL writable         токен-аккаунт banked (5qcv…qBdh), владелец 4f7v…nRmT
+  [ 7] CKE388pWMBVijYYchkasjVhZSete71S74X4cXRTX6ftu writable         прочий аккаунт (пул/служебный)
+  [ 8] DGx8Q2Gj5YKmgD3Z7wc6xpkBnuDZyZL1dMYF5YpTQAkJ writable         токен-аккаунт TTWO (TTWo…FbKo), владелец 9sHp…cZan
+  [ 9] DY4CTCeusYfft39KsChrz2xa2weftVodTLWcPWNZ37Po writable         токен-аккаунт banked (5qcv…qBdh), владелец WLHv…JVVh
+  [10] GWfyqMA8uYqzEqbRA32g2dJGLfjSUeZx5z3SZRYZx2Yt writable         прочий аккаунт (пул/служебный)
+  [11] HkasZGEzKhn8ww1QTARh4gtNfJy56pxEbfPo2Dkepngf writable         прочий аккаунт (пул/служебный)
+  [12] 11111111111111111111111111111111             readonly         программа: System Program
+  [13] ComputeBudget111111111111111111111111111111  readonly         программа: Compute Budget Program
+  [14] JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4  readonly         программа: Jupiter Aggregator v6
+  [15] TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  readonly         программа: SPL Token Program
+  [16] WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh  readonly         владелец токен-аккаунтов
+  [17] XBmHAG1qHfVZS6zJLXKBTW7zvQZAEmhsX8H2fUzco4V  readonly         прочий аккаунт (пул/служебный)
+  [18] 2DPAtwB8L12vrMRExbLuyGnC7n2J5LNoZQSejeQGpwkr readonly         прочий аккаунт (пул/служебный)
+  [19] 5qcvAgX14UQKxfsvaxTbjAzNEEEgrhgz4MGt2n8vqBdh readonly         mint токена banked (5qcv…qBdh)
+  [20] 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt readonly         прочий аккаунт (пул/служебный)
+  [21] ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL readonly         программа: Associated Token Account Program
+  [22] 9MfQfSA2raYr7c63mhuHKLjGAbD8z1Qir8Jo8vZbvKpy writable         токен-аккаунт wSOL, владелец DirR…ByTf | загружен из Address Lookup Table
+  [23] BHZqFmi8KCo4FGKDJNmHAKbqrLCcpkgTT3oS8K4vhB4U writable         загружен из Address Lookup Table
+  [24] DirR9nP5jk7fYifaYArCwZuq6pBqGWjhKgESiTuQByTf writable         владелец токен-аккаунтов | загружен из Address Lookup Table
+  [25] HEE2oMdFeoQoaDgciAmvrsxBE6cerFppvJ4oxNLGdZE8 writable         загружен из Address Lookup Table
+  [26] HqCZcBU9EGnk3mHjCx2GDX41aXkKEGrofLPHhpe5xSbN writable         токен-аккаунт TTWO (TTWo…FbKo), владелец DirR…ByTf | загружен из Address Lookup Table
+  [27] MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr  readonly         программа (передана как аккаунт): Memo Program v2 | загружен из Address Lookup Table
+  [28] So11111111111111111111111111111111111111112  readonly         mint токена wSOL | загружен из Address Lookup Table
+  [29] TTWofwAge91oFhZs7kpQdyrVRkmevgM88xijGvQFbKo  readonly         mint токена TTWO (TTWo…FbKo) | загружен из Address Lookup Table
+  [30] TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb  readonly         программа: Token-2022 Program | загружен из Address Lookup Table
+  [31] CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK readonly         программа: Raydium CLMM | загружен из Address Lookup Table
+  [32] FMrUDGjEe1izXPbn8SZPNjMfB5JvvhVq5ymmpZDebB5R readonly         загружен из Address Lookup Table
+  [33] LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj  readonly         программа: Raydium LaunchLab (Launchpad) | загружен из Address Lookup Table
+  [34] jitodontfront111111111111111111nopainnogain  readonly         загружен из Address Lookup Table
+  [35] D8cy77BBepLMngZx6ZukaTff5hCt1HrWyKk3Hnd9oitf readonly         загружен из Address Lookup Table
+
+Instructions: 9 верхнего уровня + 21 inner
+  #1 Compute Budget Program: SetComputeUnitLimit  (units=1400000)
+      accounts: #0=jito…gain
+  #2 Compute Budget Program: SetComputeUnitPrice  (microLamports=4627)
+  #3 Associated Token Account Program: createIdempotent
+      accounts: account=AA73…knDM, mint=So11…1112, source=4f7v…nRmT, systemProgram=1111…1111, tokenProgram=Toke…Q5DA, wallet=4f7v…nRmT
+      #3.1 [inner, глубина 2] SPL Token Program: getAccountDataSize  (extensionTypes=['immutableOwner'])
+          accounts: mint=So11…1112
+      #3.2 [inner, глубина 2] System Program: createAccount  (lamports=1488440, space=165)
+          accounts: newAccount=AA73…knDM, owner=Toke…Q5DA, source=4f7v…nRmT
+      #3.3 [inner, глубина 2] SPL Token Program: initializeImmutableOwner
+          accounts: account=AA73…knDM
+      #3.4 [inner, глубина 2] SPL Token Program: initializeAccount3
+          accounts: account=AA73…knDM, mint=So11…1112, owner=4f7v…nRmT
+  #4 System Program: transfer  (lamports=13123964)
+      accounts: destination=AA73…knDM, source=4f7v…nRmT
+  #5 SPL Token Program: syncNative
+      accounts: account=AA73…knDM
+  #6 Associated Token Account Program: createIdempotent
+      accounts: account=B7AN…UyBL, mint=5qcv…qBdh, source=4f7v…nRmT, systemProgram=1111…1111, tokenProgram=Toke…xuEb, wallet=4f7v…nRmT
+      #6.1 [inner, глубина 2] Token-2022 Program: getAccountDataSize  (extensionTypes=['immutableOwner'])
+          accounts: mint=5qcv…qBdh
+      #6.2 [inner, глубина 2] System Program: createAccount  (lamports=1574800, space=182)
+          accounts: newAccount=B7AN…UyBL, owner=Toke…xuEb, source=4f7v…nRmT
+      #6.3 [inner, глубина 2] Token-2022 Program: initializeImmutableOwner
+          accounts: account=B7AN…UyBL
+      #6.4 [inner, глубина 2] Token-2022 Program: initializeAccount3
+          accounts: account=B7AN…UyBL, mint=5qcv…qBdh, owner=4f7v…nRmT
+  #7 Associated Token Account Program: createIdempotent
+      accounts: account=66Zi…od3v, mint=TTWo…FbKo, source=4f7v…nRmT, systemProgram=1111…1111, tokenProgram=Toke…xuEb, wallet=4f7v…nRmT
+      #7.1 [inner, глубина 2] Token-2022 Program: getAccountDataSize  (extensionTypes=['immutableOwner'])
+          accounts: mint=TTWo…FbKo
+      #7.2 [inner, глубина 2] System Program: createAccount  (lamports=1559560, space=179)
+          accounts: newAccount=66Zi…od3v, owner=Toke…xuEb, source=4f7v…nRmT
+      #7.3 [inner, глубина 2] Token-2022 Program: initializeImmutableOwner
+          accounts: account=66Zi…od3v
+      #7.4 [inner, глубина 2] Token-2022 Program: initializeAccount3
+          accounts: account=66Zi…od3v, mint=TTWo…FbKo, owner=4f7v…nRmT
+  #8 Jupiter Aggregator v6: route_v2
+      accounts: #0=4f7v…nRmT, #1=AA73…knDM, #2=B7AN…UyBL, #3=So11…1112, #4=5qcv…qBdh, #5=Toke…Q5DA, #6=Toke…xuEb, #7=JUP6…TaV4, #8=D8cy…oitf, #9=JUP6…TaV4, #10=CAMM…rWqK, #11=4f7v…nRmT, #12=FMrU…bB5R, #13=DirR…ByTf, #14=AA73…knDM, #15=66Zi…od3v, #16=9MfQ…vKpy, #17=HqCZ…xSbN, #18=HEE2…dZE8, #19=Toke…Q5DA, #20=Toke…xuEb, #21=Memo…fcHr, #22=So11…1112, #23=TTWo…FbKo, #24=BHZq…hB4U, #25=GWfy…x2Yt, #26=Hkas…pngf, #27=7VoJ…UM2Q, #28=JUP6…TaV4, #29=LanM…J3uj, #30=4f7v…nRmT, #31=WLHv…JVVh, #32=XBmH…co4V, #33=6BwH…TESt, #34=CKE3…6ftu, #35=B7AN…UyBL, #36=66Zi…od3v, #37=DY4C…37Po, #38=2CnT…r4fC, #39=5qcv…qBdh, #40=TTWo…FbKo, #41=Toke…xuEb, #42=Toke…xuEb, #43=2DPA…pwkr, #44=LanM…J3uj, #45=4f7v…nRmT, #46=1111…1111, #47=DHEG…bCa2, #48=DGx8…QAkJ, #49=JUP6…TaV4
+      #8.1 [inner, глубина 2] Raydium CLMM: swap_v2
+          accounts: #0=4f7v…nRmT, #1=FMrU…bB5R, #2=DirR…ByTf, #3=AA73…knDM, #4=66Zi…od3v, #5=9MfQ…vKpy, #6=HqCZ…xSbN, #7=HEE2…dZE8, #8=Toke…Q5DA, #9=Toke…xuEb, #10=Memo…fcHr, #11=So11…1112, #12=TTWo…FbKo, #13=BHZq…hB4U, #14=GWfy…x2Yt, #15=Hkas…pngf, #16=7VoJ…UM2Q
+      #8.2 [inner, глубина 3] SPL Token Program: transferChecked  (tokenAmount=0.013123964 (raw 13123964, decimals 9))
+          accounts: authority=4f7v…nRmT, destination=9MfQ…vKpy, mint=So11…1112, source=AA73…knDM
+      #8.3 [inner, глубина 3] Token-2022 Program: transferChecked  (tokenAmount=0.0076 (raw 7600, decimals 6))
+          accounts: authority=DirR…ByTf, destination=66Zi…od3v, mint=TTWo…FbKo, source=HqCZ…xSbN
+      #8.4 [inner, глубина 2] Raydium LaunchLab (Launchpad): buy_exact_in
+          accounts: #0=4f7v…nRmT, #1=WLHv…JVVh, #2=XBmH…co4V, #3=6BwH…TESt, #4=CKE3…6ftu, #5=B7AN…UyBL, #6=66Zi…od3v, #7=DY4C…37Po, #8=2CnT…r4fC, #9=5qcv…qBdh, #10=TTWo…FbKo, #11=Toke…xuEb, #12=Toke…xuEb, #13=2DPA…pwkr, #14=LanM…J3uj, #15=1111…1111, #16=DHEG…bCa2, #17=DGx8…QAkJ
+      #8.5 [inner, глубина 3] Raydium LaunchLab (Launchpad): emit event TradeEvent (self-CPI)
+          accounts: #0=2DPA…pwkr
+      #8.6 [inner, глубина 3] Token-2022 Program: transferChecked  (tokenAmount=0.0076 (raw 7600, decimals 6))
+          accounts: authority=4f7v…nRmT, destination=2CnT…r4fC, mint=TTWo…FbKo, source=66Zi…od3v
+      #8.7 [inner, глубина 3] Token-2022 Program: transferChecked  (tokenAmount=309789.196154 (raw 309789196154, decimals 6))
+          accounts: authority=WLHv…JVVh, destination=B7AN…UyBL, mint=5qcv…qBdh, source=DY4C…37Po
+      #8.8 [inner, глубина 3] Token-2022 Program: transferChecked  (tokenAmount=0.000076 (raw 76, decimals 6))
+          accounts: authority=WLHv…JVVh, destination=DHEG…bCa2, mint=TTWo…FbKo, source=2CnT…r4fC
+      #8.9 [inner, глубина 2] Jupiter Aggregator v6: emit event SwapsEvent (self-CPI)
+          accounts: #0=D8cy…oitf
+  #9 SPL Token Program: closeAccount
+      accounts: account=AA73…knDM, destination=4f7v…nRmT, owner=4f7v…nRmT
+
+Programs:
+  ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL Associated Token Account Program
+  ComputeBudget111111111111111111111111111111  Compute Budget Program
+  JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4  Jupiter Aggregator v6
+  CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK Raydium CLMM
+  LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj  Raydium LaunchLab (Launchpad)
+  TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  SPL Token Program
+  11111111111111111111111111111111             System Program
+  TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb  Token-2022 Program
+
+Fee: 11478 lamports = 0.000011478 SOL
+  базовая: 1 подпись(и) × 5000 = 5000 lamports
+  priority fee: 4627 µlamports/CU × лимит 1400000 CU = 6478 lamports  (проверка: база + priority = 11478 == fee ✓)
+  лимит CU (SetComputeUnitLimit): 1400000
+Compute units consumed: 181419
+
+Изменения SOL (lamports, только изменившиеся):
+  [ 0] 4f7vfq2xw1sJJ5sHcrcPZLfSWNamZkavUFkavNv1nRmT       18 537 844 →        2 268 042  (-16 269 802 = -0.016269802 SOL)
+  [ 3] 66ZiRgSTdJdwDMuw687HLPXuFsFQ6FhwhsfW5xLHod3v                0 →        1 559 560  (+1 559 560 = +0.00155956 SOL)
+  [ 6] B7ANqD3AMNE4v3n6EuvZYK4t7XeHrTxJXxDibiVMUyBL                0 →        1 574 800  (+1 574 800 = +0.0015748 SOL)
+  [22] 9MfQfSA2raYr7c63mhuHKLjGAbD8z1Qir8Jo8vZbvKpy   22 880 167 845 →   22 893 291 809  (+13 123 964 = +0.013123964 SOL)
+
+Изменения токенов (pre → post):
+  [ 1] DHEG…bCa2 TTWO (TTWo…FbKo)       владелец 56XV…bd2p: 2.952596 → 2.952672  (+0.000076)
+  [ 2] 2CnT…r4fC TTWO (TTWo…FbKo)       владелец WLHv…JVVh: 3.923613 → 3.931137  (+0.007524)
+  [ 3] 66Zi…od3v TTWO (TTWo…FbKo)       владелец 4f7v…nRmT: — → 0  (+0)
+  [ 6] B7AN…UyBL banked (5qcv…qBdh)     владелец 4f7v…nRmT: — → 306 691.304192  (+306 691.304192)
+  [ 8] DGx8…QAkJ TTWO (TTWo…FbKo)       владелец 9sHp…cZan: 0 → 0  (+0)
+  [ 9] DY4C…37Po banked (5qcv…qBdh)     владелец WLHv…JVVh: 807 057 512.225004 → 806 747 723.02885  (-309 789.196154)
+  [22] 9MfQ…vKpy wSOL                   владелец DirR…ByTf: 22.878679405 → 22.891803369  (+0.013123964)
+  [26] HqCZ…xSbN TTWO (TTWo…FbKo)       владелец DirR…ByTf: 10.293989 → 10.286389  (-0.0076)
+  ! у mint banked (5qcv…qBdh) есть Token-2022 transfer fee 1% (текущая конфигурация mint) — получатель получает сумму transferChecked минус комиссию
+
+Логи: 110 строк

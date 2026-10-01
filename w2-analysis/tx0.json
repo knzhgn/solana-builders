@@ -1,0 +1,80 @@
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "blockTime": 1790861977,
+    "meta": {
+      "computeUnitsConsumed": 150,
+      "costUnits": 1481,
+      "err": null,
+      "fee": 5000,
+      "innerInstructions": [],
+      "logMessages": [
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success"
+      ],
+      "postBalances": [
+        899995000,
+        4099920066,
+        1
+      ],
+      "postTokenBalances": [],
+      "preBalances": [
+        1000000000,
+        3999920066,
+        1
+      ],
+      "preTokenBalances": [],
+      "rewards": [],
+      "status": {
+        "Ok": null
+      }
+    },
+    "slot": 506290625,
+    "transaction": {
+      "message": {
+        "accountKeys": [
+          {
+            "pubkey": "2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9",
+            "signer": true,
+            "source": "transaction",
+            "writable": true
+          },
+          {
+            "pubkey": "6gAYJ35qhM1WznJz5d2kRa3mG5HdC2VwvhQGvoSY1sgF",
+            "signer": false,
+            "source": "transaction",
+            "writable": true
+          },
+          {
+            "pubkey": "11111111111111111111111111111111",
+            "signer": false,
+            "source": "transaction",
+            "writable": false
+          }
+        ],
+        "instructions": [
+          {
+            "parsed": {
+              "info": {
+                "destination": "6gAYJ35qhM1WznJz5d2kRa3mG5HdC2VwvhQGvoSY1sgF",
+                "lamports": 100000000,
+                "source": "2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9"
+              },
+              "type": "transfer"
+            },
+            "program": "system",
+            "programId": "11111111111111111111111111111111",
+            "stackHeight": 1
+          }
+        ],
+        "recentBlockhash": "6qDQLNNK4bDjLPEyRAivCW9esDGHFgoXhMEQcFHGUvhU"
+      },
+      "signatures": [
+        "nzorVo4VUwfuLdrTgfgcmsnuMiL92BBvTxZrkfYiK9Dsuz2orWoXxL5WoS7EEM9D2gmTYVQ8kwZcjc9Q1C1sMY9"
+      ]
+    },
+    "transactionIndex": 6,
+    "version": "legacy"
+  },
+  "id": 1
+}

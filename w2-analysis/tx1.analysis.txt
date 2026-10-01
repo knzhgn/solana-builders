@@ -1,0 +1,31 @@
+Signature: 3W5AdTJfPcZLehxDBonQpJc7a2CV459n34aYYZUjisj2ygfFRc8gH1HHwp6SVABdzFm6Sxa6vHXtnG6J1Na34UHb
+Сеть: mainnet   Версия: legacy   Статус: успех
+Slot: 452309136   Время: 2026-10-01 14:04:01 UTC
+Fee payer: 9sdtCBadNXG18oh51wKKctvYzamCZA4PqippXzV4wmz
+Signers (1): 9sdtCBadNXG18oh51wKKctvYzamCZA4PqippXzV4wmz
+
+Accounts (3):
+  [ 0] 9sdtCBadNXG18oh51wKKctvYzamCZA4PqippXzV4wmz  signer,writable  fee payer
+  [ 1] Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY writable         destination в transfer
+  [ 2] 11111111111111111111111111111111             readonly         программа: System Program
+
+Instructions: 1 верхнего уровня + 0 inner
+  #1 System Program: transfer  (lamports=1000)
+      accounts: destination=Cw8C…vLkY, source=9sdt…4wmz
+
+Programs:
+  11111111111111111111111111111111             System Program
+
+Fee: 5000 lamports = 0.000005 SOL
+  базовая: 1 подпись(и) × 5000 = 5000 lamports
+  priority fee: нет (SetComputeUnitPrice отсутствует)
+Compute units consumed: 150
+
+Изменения SOL (lamports, только изменившиеся):
+  [ 0] 9sdtCBadNXG18oh51wKKctvYzamCZA4PqippXzV4wmz       233 206 148 →      233 200 148  (-6 000 = -0.000006 SOL)
+  [ 1] Cw8CFyM9FkoMi7K7Crf6HNQqf4uEMzpKw6QNghXLvLkY          697 360 →          698 360  (+1 000 = +0.000001 SOL)
+
+Изменения токенов (pre → post):
+  нет токен-балансов
+
+Логи: 2 строк

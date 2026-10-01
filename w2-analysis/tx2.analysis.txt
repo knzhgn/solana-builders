@@ -1,0 +1,47 @@
+Signature: 2niunQ4t6evJv8GLW6AfFq6TxuwCzYcHR6VyfigbKei1YN5J2WpC6kjbgQhZXZ8GUJqtrGPa9qrTbYowg71pSR4T
+Сеть: mainnet   Версия: legacy   Статус: успех
+Slot: 452309387   Время: 2026-10-01 14:05:09 UTC
+Fee payer: 6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF
+Signers (1): 6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF
+
+Accounts (10):
+  [ 0] 6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF signer,writable  fee payer | владелец токен-аккаунтов
+  [ 1] 8g1gYt8tFYP8Yo4Wvz1VpUsfouH1kL79wxeiRvyB4hND writable         токен-аккаунт USDC, владелец 6LY1…zkzF
+  [ 2] F3GMxK6xzrn7nQherdr3PAJri9BRq34WtighgF3abxQA writable         токен-аккаунт USDC, владелец 51SY…uyZ5
+  [ 3] 11111111111111111111111111111111             readonly         программа (передана как аккаунт): System Program
+  [ 4] 51SYJoUYbvHvCTBf9P8TyDg7VVrVcGpXwfBQTZDxuyZ5 readonly         владелец токен-аккаунтов
+  [ 5] ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL readonly         программа: Associated Token Account Program
+  [ 6] ComputeBudget111111111111111111111111111111  readonly         программа: Compute Budget Program
+  [ 7] EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v readonly         mint токена USDC
+  [ 8] MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr  readonly         программа: Memo Program v2
+  [ 9] TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  readonly         программа: SPL Token Program
+
+Instructions: 5 верхнего уровня + 0 inner
+  #1 Compute Budget Program: SetComputeUnitLimit  (units=14662)
+  #2 Compute Budget Program: SetComputeUnitPrice  (microLamports=20000)
+  #3 Memo Program v2: memo  (text=1790863505434544605)
+  #4 Associated Token Account Program: createIdempotent
+      accounts: account=F3GM…bxQA, mint=EPjF…Dt1v, source=6LY1…zkzF, systemProgram=1111…1111, tokenProgram=Toke…Q5DA, wallet=51SY…uyZ5
+  #5 SPL Token Program: transferChecked  (tokenAmount=11.765859 (raw 11765859, decimals 6))
+      accounts: authority=6LY1…zkzF, destination=F3GM…bxQA, mint=EPjF…Dt1v, source=8g1g…4hND
+
+Programs:
+  ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL Associated Token Account Program
+  ComputeBudget111111111111111111111111111111  Compute Budget Program
+  MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr  Memo Program v2
+  TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA  SPL Token Program
+
+Fee: 5294 lamports = 0.000005294 SOL
+  базовая: 1 подпись(и) × 5000 = 5000 lamports
+  priority fee: 20000 µlamports/CU × лимит 14662 CU = 294 lamports  (проверка: база + priority = 5294 == fee ✓)
+  лимит CU (SetComputeUnitLimit): 14662
+Compute units consumed: 14662
+
+Изменения SOL (lamports, только изменившиеся):
+  [ 0] 6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF 70 351 894 995 278 → 70 351 894 989 984  (-5 294 = -0.000005294 SOL)
+
+Изменения токенов (pre → post):
+  [ 1] 8g1g…4hND USDC                   владелец 6LY1…zkzF: 102 566 966.248612 → 102 566 954.482753  (-11.765859)
+  [ 2] F3GM…bxQA USDC                   владелец 51SY…uyZ5: 0 → 11.765859  (+11.765859)
+
+Логи: 15 строк

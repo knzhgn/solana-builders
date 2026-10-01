@@ -1,0 +1,31 @@
+Signature: nzorVo4VUwfuLdrTgfgcmsnuMiL92BBvTxZrkfYiK9Dsuz2orWoXxL5WoS7EEM9D2gmTYVQ8kwZcjc9Q1C1sMY9
+Сеть: devnet   Версия: legacy   Статус: успех
+Slot: 506290625   Время: 2026-10-01 13:39:37 UTC
+Fee payer: 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+Signers (1): 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+
+Accounts (3):
+  [ 0] 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9 signer,writable  fee payer
+  [ 1] 6gAYJ35qhM1WznJz5d2kRa3mG5HdC2VwvhQGvoSY1sgF writable         destination в transfer
+  [ 2] 11111111111111111111111111111111             readonly         программа: System Program
+
+Instructions: 1 верхнего уровня + 0 inner
+  #1 System Program: transfer  (lamports=100000000)
+      accounts: destination=6gAY…1sgF, source=2KWU…FXv9
+
+Programs:
+  11111111111111111111111111111111             System Program
+
+Fee: 5000 lamports = 0.000005 SOL
+  базовая: 1 подпись(и) × 5000 = 5000 lamports
+  priority fee: нет (SetComputeUnitPrice отсутствует)
+Compute units consumed: 150
+
+Изменения SOL (lamports, только изменившиеся):
+  [ 0] 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9    1 000 000 000 →      899 995 000  (-100 005 000 = -0.100005 SOL)
+  [ 1] 6gAYJ35qhM1WznJz5d2kRa3mG5HdC2VwvhQGvoSY1sgF    3 999 920 066 →    4 099 920 066  (+100 000 000 = +0.1 SOL)
+
+Изменения токенов (pre → post):
+  нет токен-балансов
+
+Логи: 2 строк

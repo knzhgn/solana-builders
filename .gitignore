@@ -3,3 +3,5 @@ keys/
 **/keys/*.json
 target/
 node_modules/
+__pycache__/
+.DS_Store
