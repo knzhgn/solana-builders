@@ -1,0 +1,16 @@
+Warning: 'anchor deploy' is deprecated. Use 'anchor program deploy' instead.
+Deploying cluster: https://api.devnet.solana.com
+Upgrade authority: /Users/valentin/solana-builders/w1-wallet/keys/main.json
+Deploying program "counter"...
+Program path: /Users/valentin/solana-builders/w5-anchor-counter/target/deploy/counter.so...
+Program ID: H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U
+
+Writing metadata account...
+ ├─ metadata: 4HtkQadYoUy4nJL7ENuBm1FoXW483ykmYTA2KibiZYEa
+ ├─ program: H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U
+ └─ seed: idl
+
+[Success] Operation executed successfully
+IDL initialized.
+✓ Idl metadata created/updated
+Deploy success

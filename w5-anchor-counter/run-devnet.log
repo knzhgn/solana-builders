@@ -1,0 +1,25 @@
+cluster: devnet
+program: H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U
+counter: A8hchhjfBmc3f6RD8nGhAiG9nFgKwTbybh1JQ2WPkfvL
+initialize	nAHSLLHhaxZwbVgnhSdEqBThDpAC2oW1WAhJFbXuVVCHtB93B9RGEnKs67k3x8Xtrc6mHSkLtxuJNz3LFnv4EQM	count=0
+increment	3hzEysCvZteAb3q3d2jUSxNWKC2LMmgsskiaotvzPdGMem6GzUXRmEovQRzJVDMWZtS6LAxK6XTzPL3xqXFYFaED	count=1
+increment	2RjRkq42QPHp3rvuLcsnw8bCjGPiW1WmA3n9FRjgZpMesrm6XVvriuL1bf6VJ9vbwpvGigM9ZzRhzEd4urcuZuUx	count=2
+increment	3xGFpY9bTRRUqXJmS8p4kQkiraBfq9TMEozfZMm9vtgPs2QHMrt8d92bjo8WnZGCqEHf6mTANuDs5LRnXGfsgEeZ	count=3
+decrement	5hh4W559qUi9PbpX75ibkmETFFH4UN92FWqT5vXLzoruytDfiH2hd3YeCP7DjjnGZMnZxFRkc4Ks6i9Ht8SEqwvy	count=2
+final count: 2
+authority: 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+
+--- stdout клиента ---
+cluster: devnet
+program: H6sSYCfPuUZVSrZsoNnvRhgZf9EvFYsCKtV4wWJoMn6U
+payer:   2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+counter: A8hchhjfBmc3f6RD8nGhAiG9nFgKwTbybh1JQ2WPkfvL
+initialize  count=0  https://explorer.solana.com/tx/nAHSLLHhaxZwbVgnhSdEqBThDpAC2oW1WAhJFbXuVVCHtB93B9RGEnKs67k3x8Xtrc6mHSkLtxuJNz3LFnv4EQM?cluster=devnet
+increment   count=1  https://explorer.solana.com/tx/3hzEysCvZteAb3q3d2jUSxNWKC2LMmgsskiaotvzPdGMem6GzUXRmEovQRzJVDMWZtS6LAxK6XTzPL3xqXFYFaED?cluster=devnet
+increment   count=2  https://explorer.solana.com/tx/2RjRkq42QPHp3rvuLcsnw8bCjGPiW1WmA3n9FRjgZpMesrm6XVvriuL1bf6VJ9vbwpvGigM9ZzRhzEd4urcuZuUx?cluster=devnet
+increment   count=3  https://explorer.solana.com/tx/3xGFpY9bTRRUqXJmS8p4kQkiraBfq9TMEozfZMm9vtgPs2QHMrt8d92bjo8WnZGCqEHf6mTANuDs5LRnXGfsgEeZ?cluster=devnet
+decrement   count=2  https://explorer.solana.com/tx/5hh4W559qUi9PbpX75ibkmETFFH4UN92FWqT5vXLzoruytDfiH2hd3YeCP7DjjnGZMnZxFRkc4Ks6i9Ht8SEqwvy?cluster=devnet
+
+итог: count = 2, authority = 2KWU4aTFFwChdU2YxYj1LD8b6eqC7Kum7hHsKDsaFXv9
+счётчик: https://explorer.solana.com/address/A8hchhjfBmc3f6RD8nGhAiG9nFgKwTbybh1JQ2WPkfvL?cluster=devnet
+потрачено кошельком: 924080 lamports
